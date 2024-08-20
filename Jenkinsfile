@@ -1,9 +1,10 @@
 pipeline {
   agent any
     stages {
-      stage('version') {
+      stage('setup') {
           steps {
-            sh 'python3 --version'
+            sh 'pip install pytest'
+            sh 'pip install selenium'
         }
       }
       stage('test') {
