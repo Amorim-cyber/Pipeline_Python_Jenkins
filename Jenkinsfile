@@ -5,6 +5,7 @@ pipeline {
           steps {
             sh 'pip install pytest'
             sh 'pip install selenium'
+            sh 'pip install chromedriver-py'
         }
       }
       stage('test') {
